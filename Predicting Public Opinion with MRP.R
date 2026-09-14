@@ -135,9 +135,9 @@ cleanBES$Religion <- case_when(
 
 cleanBES$Employment <- case_when(
   cleanBES$Employment == 1  ~ 1,   
-  cleanBES$Employment == 2  ~ 2,   # Working FT self-employed → In employment: Self-employed
-  cleanBES$Employment == 3  ~ 1,   # Working PT employee → In employment: Employee (Census doesn't split by hours)
-  cleanBES$Employment == 4  ~ 2,   # Working PT self-employed → In employment: Self-employed
+  cleanBES$Employment == 2  ~ 2,   
+  cleanBES$Employment == 3  ~ 1,   
+  cleanBES$Employment == 4  ~ 2,   
   cleanBES$Employment == 5  ~ 3,   
   cleanBES$Employment == 6  ~ 9,   
   cleanBES$Employment == 7  ~ 6,   
