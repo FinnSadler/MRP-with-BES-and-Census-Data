@@ -268,7 +268,7 @@ mapData <- SF %>% left_join(regionSummary, by = c("eer16cd" = "Region"))
 sum(is.na(mapData$mean))
 #1 NA - Scotland
 
-#Remove NA (Scotland isn't included)
+#Remove NA (Scotland isn't included because it’s Census was conducted separately)
 mapData <- na.omit(mapData)
 
 #Create the plot
